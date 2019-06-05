@@ -1,0 +1,12 @@
+version: '2'
+
+services: 
+	basedatos:
+	  image: "mongo"
+	  ports: 
+	    - "27017:27017"
+	  networks:
+		- net1
+
+networks:
+	net1:
