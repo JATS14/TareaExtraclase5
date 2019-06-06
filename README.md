@@ -14,4 +14,6 @@ Estudiantes:
 
 Imagenes de contenedores necesarias para correr el programa: 
           websphere-liberty y mongo
+          
+El programa es una tienda de libros, los cuales se pueden concultar todos, consultar por id, sacar un libro o actualizarlo.
 
