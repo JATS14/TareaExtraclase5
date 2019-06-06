@@ -39,5 +39,11 @@ public class LibroResource {
 	public void renovarLibro(@PathParam("id") String Id, Libro LibroN) {
 		Tienda.obtenerTienda().renovarLibro(Id, LibroN);
 	}
+	
+	@Path("borrar/{id}")
+	@POST
+	public void borrarLibro(String Id) {
+		Tienda.obtenerTienda().borrarLibro(Id);
+	}
 }
 

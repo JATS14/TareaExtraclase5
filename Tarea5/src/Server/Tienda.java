@@ -38,5 +38,8 @@ public class Tienda {
 	public void renovarLibro(String Id, Libro libroARenovar) {
 		mongo.renovarLibro(Id, libroARenovar);
 	}
+	public void borrarLibro(String Id) {
+		mongo.borrarLibro(Id);
+	}
 }
 

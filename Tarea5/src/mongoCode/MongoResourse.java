@@ -67,5 +67,10 @@ public class MongoResourse {
 		Libro n = new Libro(Id,lR.getTitle(),lR.getAuthor(),lR.getDescription());
 		coleccion.insert(n.toDBObjectLibro());
 	}
+	
+	public void borrarLibro(String Id) {
+		DBObject query = new BasicDBObject("id", new BasicDBObject("$regex", Id));
+		coleccion.findAndRemove(query);
+	}
 
 }
